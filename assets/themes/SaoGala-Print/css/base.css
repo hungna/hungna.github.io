@@ -1,0 +1,366 @@
+/*COMMON STYLES FOR ALL PAGES*/
+body {
+	font:62.5%/1 Arial, Helvetica, sans-serif;
+	background:#eee;
+	color:#000;
+}
+/*HEADER*/
+.wrap-topbar {background:#ffc65a; height:35px;}
+	.topbar {width:980px; margin:0 auto; position:relative;}
+		.topbar .date {position:absolute; top:12px; left:0; font-size:1.2em; color:#333;}
+		.topbar .links {position:absolute; top:12px; right:0; font-size:1.2em;}
+			.links li {float:left; margin-right:5px; border-right:solid 1px #666; padding-right:5px;}
+			.links li.last {margin:0; padding:0; border:none;}
+			.links a:link, .links a:visited {color:#000;} .links a:hover {color:#c00;}
+		.topbar .search {position:absolute; top:5px; right:360px;}
+		.search .txtsearch {
+			border:none;
+			background:#fff;
+			width:250px;
+			height:25px;
+			padding:0 25px 0 5px;
+			font-size:1.2em;
+			color:#666;
+		}
+		.search .lookup {position:absolute; top:5px; right:5px;}
+#header, #navigation {width:980px; margin:0 auto;}
+#header {line-height:0;}
+#navigation {
+	background:url(../Images/navi_bg.gif) repeat-x;
+	height:30px;
+	border-bottom:solid 1px #840400;
+	box-shadow:0 3px 5px rgba(0,0,0,0.2)
+}
+
+	.navi>li {
+		float:left;
+		position:relative;
+		z-index:5;
+	}
+	.navi>li.homepage .icon {position:absolute; top:8px; left:10px;}
+	.navi>li.homepage span a {padding:8px 12px 0 25px;}
+		.navi>li span a {
+			display:block;
+			height:22px;
+			padding:8px 12px 0 10px;
+			font-size:1.4em;
+			color:#fff;
+			background:url(../Images/navi_delim.gif) right repeat-y;
+		}
+	.navi ul.subnavi {
+		position:absolute; top:30px; left:-2000em;
+		background:#840400;
+		width:160px;
+	}
+	ul.subnavi a {
+		display:block;
+		padding:7px 10px;
+		color:#fff;
+		font-size:1.2em;
+		border-bottom:solid 1px #730401;
+	}
+	ul.subnavi a:hover {background:#580001; border-bottom:solid 1px #580001;}
+	.navi li:hover, .navi li.current {background:#840400;}
+	.navi li:hover span a, .navi li.current span a {color:#ffc65a;}
+	.navi li:hover ul.subnavi {left:0;}
+
+/*FOOTER*/
+#footer, .footnav {width:980px; margin:0 auto;}
+.footnav {
+	background:url(../Images/navi_bg.gif) repeat-x;
+	height:30px;
+	border-bottom:solid 1px #840400;
+	box-shadow:0 3px 5px rgba(0,0,0,0.2);
+	margin-bottom:20px;
+}
+#footer p {font-size:1.1em; color:#666; margin-bottom:5px; text-align:center}
+a:link, a:visited {color:#036; text-decoration:none;}
+/*a:visited {color:#609}*/
+a:hover, a:active {color:#c00;}
+
+/*SPRITES*/
+.sprites {background-image:url(../Images/sprites.png)}
+.clickable {display:inline-block; vertical-align:middle}
+	.clickable a {display:block; text-indent:-2000em;}
+.icon {display:inline-block; vertical-align:middle; margin-right:5px;}
+
+.lookup {width:16px; height:16px; background-position:-163px -4px}
+.home {width:12px; height:12px; background-position:-116px -72px}
+.video {width:16px; height:11px; background-position:-19px -4px}
+.audio {width:12px; height:12px; background-position:-39px -4px}
+
+.cinema {width:14px; height:14px; background-position:-56px -4px}
+.exchange {width:14px; height:14px; background-position:-146px -4px}
+.gold {width:14px; height:14px; background-position:-74px -4px}
+.stock {width:14px; height:14px; background-position:-110px -4px}
+.lottery {width:14px; height:14px; background-position:-92px -4px}
+.tv {width:14px; height:14px; background-position:-128px -4px}
+
+.play {width:40px; height:40px; background-position:-2px -44px}
+.print {width:16px; height:16px; background-position:-37px -23px}
+.discuss {width:16px; height:16px; background-position:-58px -23px}
+
+/*button*/
+.button a, .paging a {
+	display:inline-block;
+	border:solid 1px #ddd;
+	font-size:1.2em; font-weight:bold;
+	padding:7px 12px;
+	box-shadow:0 1px 2px #ddd;
+	background: -webkit-linear-gradient(bottom, #eeeeee, #ffffff);
+	background: -moz-linear-gradient(bottom, #eeeeee, #ffffff);
+	text-shadow:0 1px #fff;
+}
+.button a:hover, .paging a:hover {
+	background: -webkit-linear-gradient(bottom, #eaf5f8, #ffffff);
+	background: -moz-linear-gradient(bottom, #eaf5f8, #ffffff);
+	color:#000;
+}
+.button.active a, .paging a.current {
+	background: -webkit-linear-gradient(bottom, #9f0101, #cc0000);
+	background: -moz-linear-gradient(bottom, #9f0101, #cc0000);
+	color:#fff;
+	border:solid 1px #c00;
+	text-shadow:0 1px #333;
+}
+
+/*========================*/
+/* clearfix */
+.clearfix:after, .story:after, .zone:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix, * html .story, * html .zone { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix, *:first-child+html .story, *:first-child+html .zone { zoom: 1; } /* IE7 */
+
+/*prestyle*/
+strong {font-weight:bold;}
+sup {font-size:0.8em; vertical-align:super}
+
+/*STORIES*/
+.story .title {font-weight:bold;}
+.meta {color:#999;}
+.story .incat {text-transform:uppercase;}
+
+.storylist li {font-size:1.2em; line-height:1.3em; margin-bottom:7px; padding-bottom:7px; border-bottom:solid 1px #efefef}
+.storylist li.last {border-bottom:none; padding-bottom:0; margin-bottom:0;}
+
+.hasshadow {background:#fff; box-shadow:0 0 3px #ccc;}
+		
+
+/*topics*/
+.topics {width:960px; margin:0 auto 20px auto; padding:10px;}
+	.topics li {width:184px; float:left; margin-right:10px;}
+	.topics li.last {margin-right:0;}
+	
+/*contents*/
+.contents {width:980px; margin:0 auto 20px auto; background:url(../Images/contents_bg.gif) repeat-y}
+.maincontents {width:650px; float:left; padding:10px;}
+.contents .sidebar {float:left; width:310px;}
+.subpage .maincontents {width:630px; padding:20px;}
+/*SIDEBAR*/
+.featured-media {
+	background:#e5e8e9;
+	padding:10px 10px 0 10px;
+}
+#latest-video, #latest-audio {
+	background:#fff;
+	box-shadow:0 0 2px #ccc;
+	padding:10px 10px 5px 10px;
+}
+.mediahdr li {float:left;}
+	.mediahdr li a {
+		display:block;
+		padding:7px 10px;
+		font-size:1.4em; font-weight:bold;
+	}
+	.mediahdr li a:visited {color:#036;}
+	.mediahdr li.ui-tabs-selected a {background:#fff; color:#000; box-shadow:0 -1px 1px #ccc}
+	.mediatab .clip {position:relative;}
+	.mediatab .clip .photo {margin-bottom:10px; line-height:0;}
+	.mediatab .clip .play {position:absolute; top:68px; left:128px;}
+	.mediatab .clip .title {font-weight:bold; font-size:1.4em}
+	
+	.mediatab .cliplisting li, .mediatab .clip .title {line-height:1.2em; border-bottom:solid 1px #efefef; padding:0 0 7px 0; margin-bottom:7px;}
+	.mediatab .cliplisting li {font-size:1.2em; padding:5px 0 10px 0; margin-bottom:3px}
+	.mediatab .cliplisting li.last {border:none;}
+	
+	.mediatab .audiolisting {border-top:solid 2px #ddd; padding-top:7px;}
+	.mediatab .audiolisting li {line-height:1.2em; border-bottom:solid 1px #ddd; padding:0 10px 7px 10px; margin-bottom:7px; font-size:1.2em;}
+	.mediatab .audiolisting li.last {border:none; padding:0; margin:0}
+
+/*modules*/
+.utils {background:#e5e8e9; padding:7px;}
+	.weathers {padding:10px; position:relative; background:#fff; border:solid 1px #d0d4d7; margin-bottom:7px}
+		.weathers h3 {font-size:1.4em; color:#666; font-weight:bold; border-bottom:solid 1px #ddd; padding-bottom:7px; margin-bottom:10px;}
+		.weathers .sltCity {position:absolute; top:7px; right:10px;}
+			.sltCity select {font-size:1.1em; color:#666;}
+		.weather {width:60px; padding-right:5px; margin-right:5px; float:left; border-right:solid 1px #ddd; text-align:center;}
+		.weather.last {border:none; margin:0; padding:0;}
+		.weather .date {font-size:1.4em; color:#666; margin-bottom:5px; font-weight:bold;}
+		.weather.today .date {color:#0099cb;}
+		.weather .thumb {margin-bottom:5px;}
+		.weather .temperature {display:block; margin-bottom:2px; font-size:1.2em; font-weight:bold; color:#666;}
+		.weather .skycond {font-size:1.1em; color:#666;}
+	.infocenter {padding:10px; background:#fff; border:solid 1px #d0d4d7;}
+	.infocenter a:link, .infocenter a:visited {color:#666;} .infocenter a:hover {color:#c00;}
+	.infocenter li {float:left; width:130px; margin-right:14px; font-size:1.2em; border-bottom:solid 1px #efefef; padding-bottom:5px; margin-bottom:5px}
+	.infocenter li.even {margin-right:0;} .infocenter li.lastline {margin-bottom:0; padding-bottom:0; border:none;}
+	
+/*top stories*/
+.topstories {background:#e5e8e9; padding:10px}
+.tabhdr li {float:left;}
+	.tabhdr li a {
+		display:block;
+		padding:7px 10px;
+		font-size:1.4em; font-weight:bold;
+		max-width:120px;
+		text-align:center
+	}
+	.tabhdr li a:visited {color:#036;}
+	.tabhdr li.ui-tabs-selected a {background:#fff; color:#000; box-shadow:0 -1px 1px #ccc}
+	.topstory {background:#fff; padding:10px; box-shadow:0 0 2px #ccc}
+	.topstory .story {position:relative; border-bottom:solid 1px #ddd; padding:5px 25px 10px 0; margin-bottom:3px}
+	.topstory .story:last-child {border:none; padding-bottom:0; margin:0;}
+	.topstory .story .title {font-size:1.4em; line-height:1.2em}
+	.topstory .story .rank {position:absolute; top:0; right:0; font-size:3em; font-weight:bold; color:#ccc; display:inline-block;}
+	.ui-tabs-hide {display:none;}
+/*sidebox*/
+.sb-zone {position:relative;}
+	.sb-zone .zonetitle {font-size:1.4em; font-weight:bold; color:#fff; background:#153352; padding:10px;}
+	.sb-zone .zonetitle a {color:#fff;}
+	.sb-zone.sbz-01 .zonetitle {background:url(../Images/sb_box_hdr_01.jpg); height:25px; padding:10px 10px 0 10px}
+	.sb-zone .storylist {padding:10px 15px 10px 25px; list-style:disc}
+	.sb-zone .storylist li {list-style:disc; color:#666;}
+	.sb-zone .zonemore {
+		position:absolute;
+		top:12px;
+		right:10px;
+		font-size:1em;
+		text-transform:uppercase;
+		font-weight:bold;
+	}
+	.sb-zone .zonemore a:link, .sb-zone .zonemore a:visited {color:#fff;}
+.topbanner {line-height:0;}
+.breadcrums {padding:20px; font-size:1.8em; font-weight:bold; color:#999; width:980px; margin:0 auto}
+.userinfo  input {width:150px !important;}
+.userinfo p{display:inline;}
+#comment-form {font-size:1.2em;}
+.fb-feed {padding:10px;}
+
+/*special zones*/
+.special-zone {
+	height:290px;
+	overflow:hidden;
+}
+.special-zone h3 {
+	font-size:1.4em; 
+	font-weight:bold;
+	color:#fff;
+	background:#b00600;
+	padding:10px;
+}
+	.special-zone h3 a:link, .special-zone h3 a:visited {color:#fff;} .special-zone h3 a:hover {color:#ffc65a;}
+	.special-zone .story {
+		padding:10px;
+		border-bottom:solid 1px #ddd;
+	}
+	.special-zone .story.last {
+		border:none;
+	}
+	.home-fold .special-zone .story {margin-bottom:0;}
+	.special-zone .meta {
+		font-size:1.1em;
+		color:#666;
+		font-weight:bold;
+		margin-bottom:5px;
+	}
+	.special-zone .title {
+		font-size:1.4em;
+		margin-bottom:10px;
+		line-height:1.2em;
+	}
+	.special-zone .submeta {
+		font-size:1.1em;
+		margin-bottom:5px;
+		color:#666;
+	}
+	.special-zone .submeta.notreplied {color:#c00;}
+	.special-zone .subtitle {
+		font-size:1.2em;
+	}
+
+.fullwidth-contents {width:900px; padding:40px;  margin:0 auto;}	
+	.fullwidth-contents h2 {font-size:1.8em; font-weight:bold;}
+	.fullwidth-contents .hdr {position:relative; background:url(../Images/line_faded_1.gif) bottom repeat-x; padding-bottom:20px; margin-bottom:20px;}
+	.fullwidth-contents .hdr .links {position:absolute; top:0; right:0; font-size:1.166em; font-weight:bold;}
+
+.ads-bottom-right{position: absolute;bottom: 0;right: 0;}
+
+
+.vietnamnet .story .title {
+	font-size:1.4em;
+	font-weight:bold;
+	line-height:1.2em;
+}
+.vietnamnet .story .photo {
+	float:left;
+	margin:0 10px 0 0;
+}
+.vietnamnet .story {
+	padding:10px 10px 0 10px;
+}
+.vietnamnet .zonetitle {background:#babbbd; padding:5px 10px} 
+
+.baodautu .story .title {
+	font-size:1.4em;
+	font-weight:bold;
+	line-height:1.2em;
+}
+.baodautu .story .photo {
+	float:left;
+	margin:0 10px 0 0;
+}
+.baodautu .story {
+	padding:10px 10px 0 10px;
+}
+.baodautu .zonetitle {background:#153352; padding:5px 10px; color:#fff} 
+.baodautu .zonetitle img {margin-left: 10px;} 
+.baodautu .zonetitle span {float: left;margin: 5px 0;}
+
+.menuqc {
+	margin: 0 auto;
+	width: 980px;
+}
+
+.chuyende {
+	font-size: 1.4em;
+    	line-height: 1.2em;
+	font-weight: bold;
+}
+.nangcaonangluc h3.zonetitle{
+	background:#0078b4;
+}
+.sb-zone .first{
+	padding:10px 10px 0;
+}
+.sb-zone .first .thumb{
+	float:left;
+	margin-right:10px;
+}
+.sb-zone .first .title{
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+.tiengchuong h3.zonetitle{
+	background:#153352;
+}
+.thanglong h3.zonetitle{
+	background:#153352;
+}	
+.navi>li span a,.zonemore a:link, .zonemore a:visited,.tabhdr li a,.button a, .paging a,.article-tools li {white-space:nowrap;}
