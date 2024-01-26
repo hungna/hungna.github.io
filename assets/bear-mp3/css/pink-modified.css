@@ -1,0 +1,71 @@
+div.jp-playlist {
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: 126px;
+    width: 100%;
+}
+
+.jp-playlist-item {
+    font-family: Tahoma !important;
+    font-size: 0.68em !important;
+}
+
+.jp-audio {
+    width: 258px !important;
+    padding: 10px !important;
+    background: rgb(0, 0, 0) !important;
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6) !important;
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000) !important;
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)" !important;
+    border: none !important;
+}
+
+.jp-volume-bar {
+    width: 255px !important;
+    background: url("../images/jplayer.pink.flag.png") 0px -260px repeat-x !important;
+    padding: 0px !important;
+    height: 6px !important;
+}
+
+.jp-volume-bar-value {
+    background: url("../images/jplayer.pink.flag.png") 0px -280px repeat-x !important;
+    height: 6px !important;
+}
+
+.jp-progress {
+    width: 255px !important;
+    background: none !important;
+}
+
+.jp-interface {
+    background: none !important;
+}
+
+.jp-controls {
+    margin-top: -10px !important;
+    margin-bottom: 5px !important;
+}
+
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current a {
+    color: rgb(0, 164, 240) !important;
+}
+
+.jp-current-time, .jp-duration {
+    color: #FFFFFF;
+}
+
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
+    background-color: #000000 !important;
+}
+
+.jp-title li, .jp-playlist li {
+    border-bottom: 1px solid #180A1F !important;
+    border-top: 1px solid #677883 !important;
+}
+
+div.jp-type-playlist div.jp-playlist a:hover {
+    color: rgb(0, 164, 240) !important;
+}

@@ -1,0 +1,171 @@
+.nguyenanhung-footer {
+    width: 100%;
+    z-index: 6;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.nguyenanhung-footer .logo {
+    position: absolute;
+    color: #FFFFFF;
+    left: 15px;
+    padding: 7px 0px 5px 0px;
+    font-family: "Arial";
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nguyenanhung-controls {
+    margin: 0;
+    width: 100%;
+    height: 31px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.nguyenanhung-controls .item {
+    display: inline-block;
+    padding: 8px 0px 10px 0px;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nguyenanhung-controls .item:hover {
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+    background-color: #3497B8;
+}
+
+.nguyenanhung-controls .item:first-child {
+    margin-left: 0px;
+}
+
+#show-comment {
+}
+
+.fb-comments {
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.clear {
+    clear: both;
+}
+
+.my-player {
+}
+
+#list-menu-selection {
+    position: fixed;
+    top: 0px;
+    right: 25px;
+    z-index: 10;
+    list-style: none;
+}
+
+#list-menu-selection li {
+    display: inline-block !important;
+    margin-left: 5px;
+}
+
+#list-menu-selection li a {
+    color: #FFFFFF;
+    position: relative;
+    background: rgb(0, 0, 0);
+    line-height: 27px;
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    text-decoration: none !important;
+    border: 1px solid rgb(0, 164, 240);
+    border-top: none !important;
+
+}
+
+#list-menu-selection li a.selected {
+    color: #FFFFFF !important;
+    background: rgb(0, 164, 240);
+    padding-bottom: 5px !important;
+}
+
+.tab-container {
+    border-top: 2px solid rgb(0, 164, 240);
+    position: absolute;
+    top: 27px;
+    right: 0px;
+    z-index: 8;
+    width: auto;
+    border-left: 1px solid #677883 !important;
+    border-bottom: 1px solid #677883 !important;
+}
+
+.tab-close {
+    cursor: pointer;
+    position: absolute;
+    background: rgb(0, 164, 240);
+    top: -22px;
+    left: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 3px 8px 3px 8px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.tab-click-item img {
+    height: 13px;
+}
+
+.fanpage-like {
+    position: fixed !important;
+    z-index: 7;
+    left: 30px;
+    top: 38px;
+}
+
+.noti_bubble {
+    position: absolute; /* This breaks the div from the normal HTML document. */
+    top: 0px;
+    left: 23px;
+    text-align: right;
+    padding: 1px 2px 1px 2px;
+    background-color: rgb(0, 164, 240); /* you could use a background image if you'd like as well */
+    border: 1px solid #FFFFFF;
+    color: white;
+    font-weight: bold;
+    font-size: 0.55em;
+
+    /* The following is CSS3, but isn't crucial for this technique to work. */
+    /* Keep in mind that if a browser doesn't support CSS3, it's fine! They just won't have rounded borders and won't have a box shadow effect. */
+    /* You can always use a background image to produce the same effect if you want to, and you can use both together so browsers without CSS3 still have the rounded/shadow look. */
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px gray;
+    line-height: 10px;
+    z-index: 12;
+    float: left;
+    font-family: Arial;
+}
