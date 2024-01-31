@@ -1,0 +1,324 @@
+@media all screen and (min-width: 1400px) {
+    .banner_item {
+        max-height: 650px;
+    }
+}
+
+/* Min-Width: 992px and Max-Width: 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*  testimonal  */
+    /*  team  */
+    .team_memb {
+        margin: 0;
+    }
+    /*  blog  */
+    .blog_img_inner a i {
+        font-size: 20px;
+    }
+    .blog_des h3 {
+        font-size: 20px;
+    }
+    /*  testimonal  */
+    .member_img {
+        padding: 43px 0 0;
+    }
+    .widgets h3 {
+        font-size: 22px;
+    }
+}
+
+/* Min-width: 768px and max-width 991px */
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .multi_button {
+        font-size: 13px;
+        padding: 7px 20px;
+    }
+    /*  nav  */
+    .main_logo {
+        font-size: 25px;
+        width: 137px;
+        margin-top: 22px;
+        padding: 0;
+        margin-left: 0;
+    }
+    /*.main_logo img {*/
+    /*    width: 100%;*/
+    /*}*/
+    .nav_scrl .main_logo {
+        padding: 0;
+        margin-top: 16px;
+    }
+    #nav_list ul li a {
+        font-size: 13px;
+        padding: 32px 12px;
+    }
+    .nav_scrl ul li a {
+        padding: 25px 12px !important;
+    }
+    /*  banner  */
+    .banner_arrows i {
+        height: 37px;
+        line-height: 35px;
+        font-size: 37px;
+        width: 37px;
+        border: 1px solid;
+    }
+    .banner_arrow_right {
+        right: 2%
+    }
+    .banner_arrow_left {
+        left: 2%
+    }
+    /* about */
+    .about_left h3 {
+        font-size: 23px;
+    }
+    .about_left p {
+        font-size: 13px
+    }
+    .about_right h2 {
+        font-size: 27px;
+    }
+    .about_right ul li {
+        font-size: 13px;
+    }
+    /*  Service  */
+    .service_item a h3 {
+        font-size: 21px;
+    }
+    .service_item p {
+        font-size: 13px;
+    }
+    /*  Skill  */
+    .skill_left {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .skill_left ul li {
+        font-size: 14px;
+    }
+    /*  testimonial  */
+    .member_img {
+        padding: 43px 0 0;
+    }
+    /*  team  */
+    .team_memb {
+        margin: 0;
+    }
+    /*  contact  */
+    .contact_info {
+        padding: 0;
+    }
+    .contact_info ul li {
+        padding: 28px 0;
+        padding-left: 77px;
+    }
+    .contact_info ul li i {
+        padding-right: 0;
+    }
+    .contact_info aside h3 {
+        font-size: 18px;
+    }
+    .contact_info aside a {
+        /*        font-size: 14px;*/
+    }
+    /*  contact map  */
+    .map_div {
+        padding: 0 0px 20px 0;
+    }
+    .office_info_div {
+        margin-top: 0;
+        width: 40%;
+    }
+    .office_info li {
+        margin-bottom: 26px;
+    }
+    /*  footer  */
+    .widg_1,
+    .widg_2 {
+        margin-bottom: 50px;
+    }
+}
+
+/* layout max-Width 767px */
+
+@media only screen and (max-width: 767px) {
+    .section_head h2 {
+        font-size: 31px;
+    }
+    .multi_button {
+        font-size: 14px;
+        padding: 7px 20px;
+        margin-bottom: 20px;
+    }
+    /*  Header  */
+    .main_logo {
+        padding: 10px 0;
+        margin-left: 18px;
+    }
+    .my_nav .navbar-toggle {
+        margin: 20px 20px;
+    }
+    #nav_list {
+        background: #fff;
+    }
+    #nav_list ul li a {
+        color: #222;
+        display: block;
+        padding: 13px 55px
+    }
+    #nav_list ul li a::before {
+        top: 0
+    }
+    #nav_list ul li a::after {
+        bottom: 0;
+    }
+    .nav_scrl ul li a {
+        padding: 13px 55px !important;
+    }
+    /*  banner  */
+    .banner_text {
+        padding: 0 15px;
+    }
+    .banner_text h3 {
+        font-size: 19px;
+    }
+    .banner_text h4 {
+        font-size: 26px;
+    }
+    .banner_text p {
+        font-size: 14px;
+        max-width: 460px
+    }
+    .banner_arrows i {
+        height: 37px;
+        line-height: 35px;
+        font-size: 37px;
+        width: 37px;
+        border: 1px solid;
+    }
+    .banner_arrow_left {
+        left: 0
+    }
+    .banner_arrow_right {
+        right: 0;
+    }
+    /*  about  */
+    .about_right {
+        margin-top: 20px;
+    }
+    .about_right ul {
+        margin-bottom: 20px;
+    }
+    /*  service  */
+    .service_item p {
+        max-width: 456px;
+        margin: auto;
+    }
+    /*  achivement  */
+    .counter_item {
+        padding-bottom: 50px;
+    }
+
+    .counter_item.pb0 {
+        padding-bottom: 0px;
+    }
+    .counter_item.connter_last {
+        padding-bottom: 0px;
+    }
+    /*  Work  */
+    .work_list li {
+        margin-bottom: 15px
+    }
+    .work_item {
+        margin-bottom: 20px;
+    }
+    .member_img {
+        padding: 0;
+    }
+    /*  Testimonal  */
+    .testi_arrow {
+        bottom: -6%;
+    }
+    /*  Team  */
+    .team_arrow {
+        top: -4%;
+    }
+    /*  contact map  */
+    .map_div {
+        width: 100%;
+        padding: 0;
+    }
+    .office_info_div {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .contact_form .form-group {
+        margin-bottom: 50px;
+    }
+    /*  footer  */
+    .widgets {
+        margin: 0 50px 50px 50px;
+    }
+    .widgets.widg_4 {
+        margin-bottom: 0;
+    }
+    .bottom_social ul {
+        margin-bottom: 0;
+    }
+    .footer_main ul {
+        padding: 12px 0;
+    }
+    .footer_right,
+    .footer_left {
+        text-align: center
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section_head h2 {
+        font-size: 20px;
+    }
+    /*  banner  */
+    .slide_active .slick-dots {
+        bottom: 3%;
+    }
+    .banner_text h4 {
+        font-size: 16px;
+        padding-bottom: 15px
+    }
+    .banner_text p {
+        margin-bottom: 10px;
+    }
+    /*  about  */
+    .about_left h3 {
+        font-size: 23px;
+    }
+    /*  Work  */
+    .work_item .item_des a h3 {
+        font-size: 18px;
+    }
+    .work_item .item_des p {
+        font-size: 14px
+    }
+    /*  Team  */
+    .team_arrow {
+        display: none;
+        top: -2%;
+    }
+    .team_arrow i {
+        font-size: 24px;
+        padding: 3px 9px;
+    }
+    /*  footer  */
+    .widgets {
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    .banner_text p {
+        font-size: 14px;
+        max-width: 230px;
+    }
+}
