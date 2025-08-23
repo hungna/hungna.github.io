@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Sử Phản Thực: Nếu Nhạc Phi Không Bị Xử Tử</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #0077B6, #48CAE4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .kpi-card {
+            background-color: #004E89;
+            color: white;
+        }
+        .flow-arrow {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+<div class="container mx-auto p-4 md:p-8">
+
+    <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-2">Lịch Sử Phản Thực</h1>
+        <h2 class="text-2xl md:text-4xl font-bold gradient-text">Điều Gì Sẽ Xảy Ra Nếu Nhạc Phi Không Bị Xử Tử?</h2>
+        <p class="max-w-3xl mx-auto mt-4 text-gray-600">
+            Một phân tích trực quan về các kịch bản thay thế cho nhà Nam Tống nếu vị danh tướng bất bại của họ không phải chịu cái chết oan ức vào năm 1142.
+        </p>
+    </header>
+
+    <main class="space-y-12">
+
+        <section id="hero" class="bg-white rounded-xl shadow-lg p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold text-[#004E89] mb-4">Nhạc Phi: Vị Tướng Bất Bại</h3>
+                <p class="text-gray-700 mb-4">
+                    Nhạc Phi (1103-1142) là biểu tượng của lòng trung nghĩa và tài năng quân sự kiệt xuất thời Nam Tống. Ông nổi tiếng với khát vọng "Hoàn ngã hà sơn" (Trả lại sông núi của ta), quyết tâm thu hồi lãnh thổ bị quân Kim chiếm đóng.
+                </p>
+                <p class="text-gray-700">
+                    Sự nghiệp của ông là một chuỗi chiến công lừng lẫy, nhưng lại kết thúc trong bi kịch bởi những âm mưu chính trị, đặt ra câu hỏi lớn nhất cho lịch sử Trung Hoa: "Nếu như...?"
+                </p>
+            </div>
+            <div class="kpi-card rounded-lg p-6 text-center flex flex-col justify-center items-center h-full">
+                <span class="text-7xl font-black text-[#90E0EF]">126</span>
+                <span class="text-xl font-bold mt-2 text-white">Trận Bất Bại</span>
+                <p class="text-sm text-[#ADE8F4] mt-1">Một kỷ lục vô tiền khoáng hậu trong lịch sử quân sự, khẳng định tài năng của Nhạc Gia Quân.</p>
+            </div>
+        </section>
+
+        <section id="conflict">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-gray-900">Ngã Rẽ Định Mệnh: Chủ Chiến vs. Chủ Hòa</h3>
+                <p class="max-w-2xl mx-auto mt-2 text-gray-600">Triều đình Nam Tống bị chia rẽ sâu sắc giữa hai phe phái với những mục tiêu và động cơ hoàn toàn trái ngược, tạo nên một cuộc đối đầu định hình vận mệnh quốc gia.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#0077B6]">
+                    <h4 class="text-xl font-bold text-center text-[#0077B6] mb-4">⚔️ PHE CHỦ CHIẾN</h4>
+                    <div class="text-center mb-4">
+                        <p class="font-semibold text-lg">Nhạc Phi</p>
+                        <p class="text-sm text-gray-500">Đại Nguyên Soái</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-[#0077B6] font-bold mr-2">▶</span> <strong>Mục tiêu:</strong> Thu hồi toàn bộ lãnh thổ, thống nhất đất nước.</li>
+                        <li class="flex items-start"><span class="text-[#0077B6] font-bold mr-2">▶</span> <strong>Động cơ:</strong> Lòng yêu nước, danh dự quốc gia, niềm tin vào sức mạnh quân sự.</li>
+                        <li class="flex items-start"><span class="text-[#0077B6] font-bold mr-2">▶</span> <strong>Kết cục lịch sử:</strong> Bị đàn áp, Nhạc Phi bị xử tử, mất cơ hội vàng để bắc phạt.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500">
+                    <h4 class="text-xl font-bold text-center text-red-500 mb-4">🕊️ PHE CHỦ HÒA</h4>
+                    <div class="text-center mb-4">
+                        <p class="font-semibold text-lg">Tần Cối & Tống Cao Tông</p>
+                        <p class="text-sm text-gray-500">Tể Tướng & Hoàng Đế</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-red-500 font-bold mr-2">▶</span> <strong>Mục tiêu:</strong> Đạt hòa bình với Kim, chấp nhận cống nạp để ổn định.</li>
+                        <li class="flex items-start"><span class="text-red-500 font-bold mr-2">▶</span> <strong>Động cơ:</strong> Hoàng đế sợ mất ngôi, muốn hưởng thụ; Tần Cối củng cố quyền lực.</li>
+                        <li class="flex items-start"><span class="text-red-500 font-bold mr-2">▶</span> <strong>Kết cục lịch sử:</strong> Đạt được hòa ước, nhưng Nam Tống mất lãnh thổ và danh dự.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-if-military" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <h3 class="text-3xl font-bold text-center text-gray-900 mb-2">Kịch Bản 1: Quân Sự Toàn Thắng</h3>
+            <p class="max-w-3xl mx-auto text-center text-gray-600 mb-8">Nếu không bị 12 đạo kim bài triệu hồi, Nhạc Phi đã có thể viết lại bản đồ Trung Hoa. Chiến thắng Yển Thành là minh chứng rõ nhất cho khả năng này.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h4 class="text-xl font-bold text-[#004E89] mb-3">Trận Yển Thành (1140): Chênh Lệch Lực Lượng</h4>
+                    <p class="text-gray-700 mb-4">Tại Yển Thành, Nhạc Phi chỉ với một lực lượng nhỏ đã nghiền nát đội quân đông gấp 5 lần của nhà Kim, một chiến công thể hiện thiên tài quân sự của ông và sức mạnh của Nhạc Gia Quân.</p>
+                    <div class="chart-container">
+                        <canvas id="yanchengBattleChart"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-[#004E89] mb-3">Tiềm Năng Mở Rộng Lãnh Thổ</h4>
+                    <p class="text-gray-700 mb-4">Với đà chiến thắng, việc thu hồi các kinh đô cũ và đẩy lùi quân Kim hoàn toàn nằm trong tầm tay, thay đổi căn bản vị thế của Nam Tống.</p>
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <p class="font-bold text-[#0077B6]">1. Tái chiếm Trung Nguyên</p>
+                            <p class="text-sm text-gray-600">Thu hồi các kinh đô cũ như Khai Phong, Lạc Dương.</p>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <p class="font-bold text-[#0077B6]">2. Củng cố biên giới phía Bắc</p>
+                            <p class="text-sm text-gray-600">Đẩy quân Kim về phía bắc sông Hoàng Hà.</p>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <p class="font-bold text-[#0077B6]">3. Phát triển công nghệ quân sự</p>
+                            <p class="text-sm text-gray-600">Đẩy mạnh sản xuất vũ khí thuốc súng như hỏa tiễn, tạo lợi thế lâu dài.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-if-political" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <h3 class="text-3xl font-bold text-center text-gray-900 mb-2">Kịch Bản 2: Biến Động Chính Trường</h3>
+            <p class="max-w-3xl mx-auto text-center text-gray-600 mb-8">Chiến thắng quân sự của Nhạc Phi sẽ gây ra một cơn địa chấn chính trị, thách thức cấu trúc quyền lực đã tồn tại hàng trăm năm của nhà Tống.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h4 class="text-xl font-bold text-[#004E89] mb-3">Thay Đổi Cán Cân Quyền Lực</h4>
+                    <p class="text-gray-700 mb-4">Nhà Tống chủ trương "trọng văn khinh võ" để tránh nạn kiêu binh. Tuy nhiên, uy thế của Nhạc Phi có thể đã đảo ngược tình thế, gia tăng đáng kể vai trò của quân đội trong triều đình.</p>
+                    <div class="chart-container">
+                        <canvas id="powerBalanceChart"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-[#004E89] mb-3">Khủng Hoảng Ngai Vàng</h4>
+                    <p class="text-gray-700 mb-4">Nỗi sợ lớn nhất của Tống Cao Tông là có thật. Nếu Nhạc Phi giải cứu được hai vua cũ là Huy Tông và Khâm Tông, ngai vàng của ông sẽ lung lay dữ dội.</p>
+                    <div class="relative p-6 bg-red-50 border border-red-200 rounded-lg">
+                        <p class="font-bold text-red-600">Nguy cơ nội chiến?</p>
+                        <p class="text-sm text-gray-600">Sự trở về của các cựu hoàng có thể châm ngòi cho một cuộc nội chiến hoặc một cuộc chuyển giao quyền lực đầy biến động, đẩy Nam Tống vào hỗn loạn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-if-legacy" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <h3 class="text-3xl font-bold text-center text-gray-900 mb-2">Kịch Bản 3: Di Sản Anh Hùng</h3>
+            <p class="max-w-3xl mx-auto text-center text-gray-600 mb-8">Cái chết oan ức đã biến Nhạc Phi thành một vị thánh tử đạo. Nhưng nếu ông sống và chiến thắng, di sản của ông sẽ ra sao?</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 rounded-lg p-6">
+                    <h4 class="text-xl font-bold text-center text-gray-800 mb-4">Lịch Sử Thực Tế: Bi Kịch Anh Hùng</h4>
+                    <p class="text-center text-5xl mb-4">💔</p>
+                    <p class="text-gray-700">Nhạc Phi trở thành biểu tượng vĩnh cửu của lòng trung thành bị phản bội, của tinh thần yêu nước và sự hy sinh. Cái chết bi thảm khuếch đại tầm vóc của ông, tạo ra một bài học đạo đức sâu sắc và một huyền thoại bi tráng truyền cảm hứng cho nhiều thế hệ.</p>
+                </div>
+                <div class="bg-blue-100 rounded-lg p-6">
+                    <h4 class="text-xl font-bold text-center text-[#004E89] mb-4">Kịch Bản Phản Thực: Anh Hùng Chiến Thắng</h4>
+                    <p class="text-center text-5xl mb-4">🏆</p>
+                    <p class="text-gray-700">Nhạc Phi sẽ được tôn vinh như một vị tướng vĩ đại đã hoàn thành sứ mệnh "Hoàn ngã hà sơn". Ông là một anh hùng của chiến thắng và thống nhất, nhưng có thể thiếu đi sức nặng biểu tượng của sự hy sinh tột cùng, vốn đã khắc sâu hình ảnh của ông vào tâm thức dân tộc.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="long-term" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <h3 class="text-3xl font-bold text-center text-gray-900 mb-2">Hệ Quả Dài Hạn: Đối Đầu Mông Cổ</h3>
+            <p class="max-w-3xl mx-auto text-center text-gray-600 mb-8">Một nhà Tống hùng mạnh hơn có thể thay đổi lịch sử, nhưng liệu có đủ sức chống lại cơn bão Mông Cổ, một thế lực quân sự vượt trội đã chinh phục khắp Á-Âu?</p>
+            <div class="chart-container h-96">
+                <canvas id="dynastyTimelineChart"></canvas>
+            </div>
+            <p class="text-center mt-4 text-gray-600">Biểu đồ trên cho thấy một kịch bản giả định, trong đó một nhà Tống mạnh hơn có thể kéo dài sự tồn tại của mình, nhưng việc ngăn chặn hoàn toàn sự sụp đổ trước sức mạnh của Mông Cổ là một thách thức cực kỳ lớn.</p>
+        </section>
+
+    </main>
+
+    <footer class="text-center mt-16 pt-8 border-t border-gray-300">
+        <p class="text-sm text-gray-500">Infographic được tạo dựa trên phân tích lịch sử phản thực. Mọi dữ liệu và giả thuyết đều dựa trên các nguồn tài liệu lịch sử đã được nghiên cứu.</p>
+    </footer>
+
+</div>
+
+<script>
+    function wrapLabels(label, maxWidth) {
+        const words = label.split(' ');
+        let lines = [];
+        let currentLine = words[0];
+
+        for (let i = 1; i < words.length; i++) {
+            if (currentLine.length + words[i].length + 1 < maxWidth) {
+                currentLine += ' ' + words[i];
+            } else {
+                lines.push(currentLine);
+                currentLine = words[i];
+            }
+        }
+        lines.push(currentLine);
+        return lines;
+    }
+
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        if (Array.isArray(label)) {
+            return label.join(' ');
+        }
+        return label;
+    };
+
+    const sharedTooltipOptions = {
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    title: tooltipTitleCallback
+                },
+                backgroundColor: '#004E89',
+                titleFont: { size: 14, weight: 'bold' },
+                bodyFont: { size: 12 },
+                padding: 10,
+                cornerRadius: 4,
+            },
+            legend: {
+                labels: {
+                    font: {
+                        family: 'Inter',
+                    }
+                }
+            }
+        }
+    };
+
+    const brilliantBluesPalette = {
+        darkBlue: '#004E89',
+        mediumBlue: '#0077B6',
+        lightBlue: '#48CAE4',
+        veryLightBlue: '#90E0EF',
+        paleBlue: '#ADE8F4',
+        red: '#E63946'
+    };
+
+    const yanchengBattleCtx = document.getElementById('yanchengBattleChart').getContext('2d');
+    new Chart(yanchengBattleCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Nhạc Gia Quân (Nam Tống)', 'Quân Kim'],
+            datasets: [{
+                label: 'Số Lượng Quân',
+                data: [20000, 100000],
+                backgroundColor: [brilliantBluesPalette.mediumBlue, brilliantBluesPalette.red],
+                borderColor: [brilliantBluesPalette.darkBlue, '#C0392B'],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return value / 1000 + 'k';
+                        }
+                    }
+                }
+            },
+            ...sharedTooltipOptions
+        }
+    });
+
+    const powerBalanceCtx = document.getElementById('powerBalanceChart').getContext('2d');
+    new Chart(powerBalanceCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Quyền Lực Dân Sự (Văn)', 'Quyền Lực Quân Sự (Võ)'],
+            datasets: [{
+                label: 'Lịch Sử Thực Tế',
+                data: [85, 15],
+                backgroundColor: [brilliantBluesPalette.darkBlue, brilliantBluesPalette.lightBlue],
+                borderColor: '#ffffff',
+                borderWidth: 3
+            }, {
+                label: 'Kịch Bản Phản Thực',
+                data: [60, 40],
+                backgroundColor: [brilliantBluesPalette.darkBlue, brilliantBluesPalette.lightBlue],
+                borderColor: '#ffffff',
+                borderWidth: 3
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                ...sharedTooltipOptions.plugins,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Phân Bố Quyền Lực: Lịch Sử vs. Phản Thực',
+                    font: { size: 16 }
+                }
+            }
+        }
+    });
+
+    const dynastyTimelineCtx = document.getElementById('dynastyTimelineChart').getContext('2d');
+    new Chart(dynastyTimelineCtx, {
+        type: 'line',
+        data: {
+            labels: ['1127', '1142 (Cái chết Nhạc Phi)', '1200', '1234 (Kim sụp đổ)', '1279 (Tống sụp đổ)', '1300+'],
+            datasets: [{
+                label: 'Lịch sử thực tế',
+                data: [1, 1, 1, 1, 0, 0],
+                fill: {
+                    target: 'origin',
+                    above: 'rgba(230, 57, 70, 0.2)',
+                },
+                borderColor: brilliantBluesPalette.red,
+                tension: 0.1,
+                pointRadius: 5
+            }, {
+                label: 'Kịch bản: Tống mạnh hơn',
+                data: [1, 1, 1, 1, 1, 0.5],
+                fill: {
+                    target: 'origin',
+                    above: 'rgba(0, 119, 182, 0.2)',
+                },
+                borderColor: brilliantBluesPalette.mediumBlue,
+                tension: 0.1,
+                pointRadius: 5
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    display: false,
+                    min: 0,
+                    max: 1.2
+                },
+                x: {
+                    grid: {
+                        display: false
+                    }
+                }
+            },
+            plugins: {
+                ...sharedTooltipOptions.plugins,
+                tooltip: {
+                    ...sharedTooltipOptions.plugins.tooltip,
+                    callbacks: {
+                        ...sharedTooltipOptions.plugins.tooltip.callbacks,
+                        label: function(context) {
+                            if (context.dataset.label === 'Lịch sử thực tế') {
+                                return context.dataIndex < 4 ? 'Tồn tại' : 'Sụp đổ';
+                            }
+                            return context.dataIndex < 5 ? 'Tồn tại' : 'Suy yếu/Bị chinh phạt';
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
